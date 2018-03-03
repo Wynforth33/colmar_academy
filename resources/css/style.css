@@ -1,0 +1,13 @@
+/* Universal */
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  border: 1px solid black;
+}
