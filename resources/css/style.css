@@ -3,6 +3,11 @@ html {
   font-size: 16px;
 }
 
+body {
+  font-family: sans-serif;
+  color: #464f58;
+}
+
 .flex-row {
   display: flex;
 }
@@ -12,28 +17,97 @@ html {
   flex-direction: column;
 }
 
-div {
+/* div {
   border: 1px solid black;
+} */
+
+a {
+  color: black;
+}
+
+nav {
+  margin-right: 1.5rem;
+}
+
+nav span {
+  margin-left: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
 }
 
 /* Header */
 header {
-  background-color: black;
+  align-items: center;
   justify-content: space-between;
-  width: 100%;
   height: 4rem;
-  padding: 1rem 1.5rem;
-  border-bottom: 2px solid black;
 }
 
-.logo img {
-  display: inline-block;
+.logo {
+  align-items: center;
+  height: 2rem;
+  margin-left: 1.5rem;
 }
 
-.logo h3 {
-  display: inline-block;
+.logo span {
+  color: gray;
 }
 
-header nav {
-  display: inline-block;
+.logo strong {
+  font-weight: bold;
+  color: black;
+}
+
+/* 1st Main Division - Jumbotron */
+#jumbotron {
+  padding: 2rem 1.5rem;
+  width: 100%;
+  background-color: lightgray;
+}
+
+#jumbotron .image-content {
+  width: 60%;
+}
+
+#jumbotron img {
+  width: 100%;
+  height: auto;
+}
+
+#jumbotron .text-content {
+  justify-content: center;
+  margin-left: 1.5rem;
+  width: 25%;
+}
+
+#jumbotron h1,
+#jumbotron h3 {
+  margin-bottom: 2.5rem;
+}
+
+.button {
+  padding: 0.5rem;
+  text-align: center;
+  background-color: #464f58;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.button:active {
+  border: 1px solid #464f58;
+  background-color: lightgray;
 }
