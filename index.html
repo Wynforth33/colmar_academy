@@ -4,23 +4,35 @@
     <meta charset="utf-8">
     <title>Colmar Academy</title>
     <link href="./resources/css/reset.css" rel="stylesheet" type="text/css" />
-    <link href="./resources/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./resources/css/style2.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <!-- Header -->
-    <header class="flex-row">
+    <header class="flex-row" id="large">
       <div class="logo flex-row">
         <img src="./resources/images/ic-logo.svg" />
         <span class="title"><strong>COLMAR</strong>ACADEMY</span>
       </div>
-      <nav>
+      <nav id="large">
         <span><a href="#campus">On Campus</a></span>
         <span><a href="#online">Online</a></span>
         <span><a href="#companies">For Companies</a></span>
-        <span><a href="#signin">Sign in</a></span>
+        <span><a href="#login">Sign in</a></span>
       </nav>
     </header>
-
+    <header class="flex-row hidden" id="small">
+      <div class="logo">
+        <img src="./resources/images/ic-logo.svg">
+      </div>
+      <div>
+        <a href="campus"><img src="./resources/images/ic-on-campus.svg"></a>
+      </div>
+      <div>
+        <a href="online"><img src="./resources/images/ic-online.svg"></a>
+      </div>
+      <div><a href="#login"><img src="./resources/images/ic-login.svg"></a>
+      </div>
+    </header>
     <!-- Jumbotron -->
     <section class="flex-row" id="jumbotron">
       <div class="main">
@@ -36,7 +48,6 @@
         </div>
       </div>
     </section>
-
     <!-- Headlines -->
     <section class="flex-row" id="headlines">
       <div class="main flex-column">
@@ -85,7 +96,9 @@
 
     <!-- Courses  -->
     <section class="flex-column" id="courses">
-
+      <div class="section-title">
+          <h1>Start Learning</h1>
+      </div>
       <div class="courses flex-row"> <!-- flex wrap -->
         <div class="course flex-column" id="software">
           <div class="image-content">
@@ -93,7 +106,7 @@
           </div>
           <div class="text-content">
             <h3 class="course-title">Software engineering</h3>
-            <h4 class="designation">COURSES<h4>
+            <h4 class="designation">COURSES</h4>
             <h4 class="summary">Web Development, Mobile Development, iOT, API's</h4>
           </div>
         </div>
@@ -103,7 +116,7 @@
           </div>
           <div class="text-content">
             <h3 class="course-title">Computer art</h3>
-            <h4 class="designation">COURSES<h4>
+            <h4 class="designation">COURSES</h4>
             <h4>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</h4>
           </div>
         </div>
@@ -123,7 +136,7 @@
           </div>
           <div class="text-content">
             <h3 class="course-title">Data</h3>
-            <h4 class="designation">COURSES<h4>
+            <h4 class="designation">COURSES</h4>
             <h4>Data Science, Big Data, SQL, Data Visualization</h4>
           </div>
         </div>
@@ -133,7 +146,7 @@
           </div>
           <div class="text-content">
             <h3 class="course-title">Business</h3>
-            <h4 class="designation">COURSES<h4>
+            <h4 class="designation">COURSES</h4>
             <h4>Product Development, Business Development, Startup</h4>
           </div>
         </div>
@@ -143,7 +156,7 @@
           </div>
           <div class="text-content">
             <h3 class="course-title">Marketing</h3>
-            <h4 class="designation">COURSES<h4>
+            <h4 class="designation">COURSES</h4>
             <h4>Analytics, Content Marketing, Mobile Marketing</h4>
           </div>
         </div>
@@ -152,10 +165,8 @@
 
     <!-- Exhibits -->
     <section class="flex-column" id="exhibits">
-      <div>
-        <div class="section-title">
+      <div class="section-title">
           <h1>Thesis Exhibit</h1>
-        </div>
       </div>
       <div class="flex-row">
         <div class="main flex-column">

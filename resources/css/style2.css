@@ -1,16 +1,20 @@
-/* Solution # 1: this solution was based on
-the specifications of the wireframe with some
-regard to styling elements that were not
-specifically designated so they look like their
+/* Solution # 2: this solution was based on
+the appearence of the wireframe with some
+regard to styling elements that were specifically
+designated so they look like their
 equivalents in the wireframe.*/
 
+
+
+/* Breaking Points to worry about */
+/* Min Width  810px for large mode.*/
+/* Max width  630px for small mode */
+/* 631 - 809 needs some style */
+
 /* Universal */
-a {
-  color: black;
-}
 
 body {
-  color: #464f58;
+  color: #3e3939;
   font-family: sans-serif;
 }
 
@@ -40,7 +44,8 @@ nav {
   margin-right: 1.5rem;
 }
 
-nav span {
+nav span,
+nav div {
   margin-left: 1rem;
 }
 
@@ -68,44 +73,78 @@ section {
 
 header,
 footer {
+  background: #3e3939;
   align-items: center;
   height: 4rem;
   justify-content: space-between;
 }
 
-
 /* Header */
-.logo {
-  align-items: center;
-  height: 2rem;
+#large .logo {
   margin-left: 1.5rem;
 }
 
-.logo span {
-  color: gray;
+.logo {
+  align-items: center;
+  height: 2.5rem;
+}
+
+header span,
+footer span,
+a {
+  color: #b99e13;
 }
 
 .logo strong {
-  color: black;
+  color: #000;
   font-weight: bold;
 }
 
+#small {
+  display: none;
+}
+
+@media only screen and (max-width: 630px) {
+  .main {
+    padding: 0;
+  }
+
+  #large {
+    display: none;
+  }
+
+  #small {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 0 20px;
+  }
+
+  #small img {
+    height: 2.5rem;
+    width: auto;
+  }
+}
 
 /* Jumbotron */
 #jumbotron {
-  background-color: lightgray;
+  background-color: #b4b4b4;
+}
+
+#jumbotron h4 {
+  color: #b99e13;
 }
 
   /* Jumbotron Main */
 #jumbotron h1,
 #jumbotron h3 {
+  color: #3e3939;
   margin-bottom: 1.5rem;
 }
 
   /* Jumbotron Secondary */
 .button {
-  background-color: #464f58;
-  border-radius: 0.5rem;
+  background-color: #3e3939;
   color: white;
   padding: 0.5rem;
   text-align: center;
@@ -113,27 +152,26 @@ footer {
 }
 
 .button:active {
-  background-color: lightgray;
-  border: 1px solid #464f58;
+  background-color: #b4b4b4;
+  border: 1px solid #3e3939;
 }
 
 #jumbotron .secondary {
   justify-content: center;
 }
 
-
 /* Headlines */
 
   /* Headline Main */
 #headlines .main {
-  border-right: 1px solid lightgray;
+  border-right: 1px solid #b4b4b4;
 }
 #headlines .main h1 {
   margin-top: 2rem;
 }
 
 #headlines .main h4 {
-  color: gray;
+  color: ##585858;
   margin: 1.5rem 3rem 2rem 0;
 }
 
@@ -144,7 +182,7 @@ footer {
   /* Headline Secondary */
 .headline {
   padding: 1rem;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #b4b4b4;
 }
 
 .headline .image-content {
@@ -160,7 +198,6 @@ footer {
 
 .headline h4 {
   margin: 1rem 0;
-  color: gray;
 }
 
 .more {
@@ -173,13 +210,13 @@ footer {
 }
 
 #lecture {
-  background: lightgray;
+  background: #b4b4b4;
 }
 
 /* Courses */
 #courses {
   width: 100%;
-  background-color: #eaeaeb;
+  background-color: #b4b4b4;
 }
 
 .section-title {
@@ -194,7 +231,7 @@ footer {
 }
 
 .course {
-  background-color: white;
+  background-color: #3e3939;
   width: 30%;
   margin: 0 1rem 2rem 1rem;
 }
@@ -209,14 +246,16 @@ footer {
 }
 
 .course .text-content h4 {
-  color: gray;
+  color: #959595;
 }
 
 .course-title {
   font-weight: bold;
+  color: #b99e13;
 }
 
-.designation {
+.course .text-content h4.designation {
+  color: #000;
   padding: 0.5rem 0;
 }
 
@@ -229,7 +268,7 @@ footer {
 
 #exhibits .main h4 {
   margin-top: 0.5rem;
-  color: gray;
+  color: #585858;
 }
   /* Exhibits Secondary */
 #exhibits .secondary{
@@ -238,7 +277,7 @@ footer {
 
 .exhibit {
   padding: 1rem;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #b4b4b4;
 }
 
 .exhibit .image-content {
@@ -254,20 +293,92 @@ footer {
 
 .exhibit h4 {
   margin: 1rem 0;
-  color: gray;
+  color: #585858;
 }
 
 #fisma {
-    background: lightgray;
+    background: #b4b4b4;
 }
 
 /* Footer */
 footer {
-  color: gray;
-  border-top: 1px solid lightgray;
+  color: #3e3939;
   padding: 1rem 1.5rem 3rem;
 }
 
-footer a {
-  color: gray;
+
+
+@media only screen and (max-width: 630px) {
+  .main {
+    padding: 0;
+  }
+
+  #large {
+    display: none;
+  }
+
+  #small {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 0 20px;
+  }
+
+  #small img {
+    height: 2.5rem;
+    width: auto;
+  }
+
+  #jumbotron {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #jumbotron .main {
+    width: 100%;
+    height: auto;
+  }
+
+  .secondary {
+    width: 100%;
+  }
+
+  .secondary .button {
+    width: 100%;
+  }
+
+  #jumbotron .secondary {
+    padding: 32px 16px ;
+  }
+
+  #headlines .main {
+    display: none;
+  }
+
+  #headlines {
+    padding: 16px;
+  }
+
+  .headline {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  .headline .text-content {
+    width: 100%;
+    padding: 1.5rem;
+    justify-content: flex-start;
+  }
+
+  .headline .image-content {
+    width: 100%;
+    height: 273px;
+  }
+
+  .headline .image-content img {
+    width: 100%;
+    height: auto;
+  }
 }
