@@ -8,6 +8,7 @@
   </head>
   <body>
     <!-- Header -->
+      <!-- Navbar (Desktop) -->
     <header class="flex-row" id="large">
       <div class="logo flex-row">
         <img src="./resources/images/ic-logo.svg" />
@@ -20,6 +21,7 @@
         <span><a href="#login">Sign in</a></span>
       </nav>
     </header>
+      <!-- Navbar (Mobile) -->
     <header class="flex-row hidden" id="small">
       <div class="logo">
         <img src="./resources/images/ic-logo.svg">
@@ -63,7 +65,8 @@
       <div class="secondary flex-column">
         <div class="headline flex-row" id="orientation">
           <div class="image-content">
-            <img src="./resources/images/information-orientation.jpg" />
+            <img class="desktop" src="./resources/images/information-orientation.jpg" />
+            <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" />
           </div>
           <div class="text-content flex-column">
             <h3>Orientation date</h3>
@@ -73,7 +76,8 @@
         </div>
         <div class="headline flex-row" id="campus">
           <div class="image-content">
-            <img src="./resources/images/information-campus.jpg">
+            <img class="desktop" src="./resources/images/information-campus.jpg">
+            <img class="mobile" src="./resources/images/information-campus-mobile.jpg" />
           </div>
           <div class="text-content flex-column">
             <h3>Our Campus</h3>
@@ -83,7 +87,8 @@
         </div>
         <div class="headline flex-row" id="lecture">
           <div class="image-content">
-            <img src="./resources/images/information-guest-lecture.jpg">
+            <img class="desktop" src="./resources/images/information-guest-lecture.jpg">
+            <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" />
           </div>
           <div class="text-content flex-column">
             <h3>Our guest lecture</h3>
@@ -93,7 +98,6 @@
         </div>
       </div>
     </section>
-
     <!-- Courses  -->
     <section class="flex-column" id="courses">
       <div class="section-title">
@@ -162,7 +166,6 @@
         </div>
       </div>
     </section>
-
     <!-- Exhibits -->
     <section class="flex-column" id="exhibits">
       <div class="section-title">
@@ -200,7 +203,6 @@
         </div>
       </div>
     </section>
-
     <!-- Footer -->
     <footer class="flex-row">
       <div>
@@ -211,6 +213,5 @@
         <span><a href="#">Privacy</a></span>
       </nav>
     </footer>
-
   </body>
 </html>
