@@ -79,13 +79,27 @@ nav div {
   flex-direction: column;
 }
 
+.image-content {
+  width: 35%;
+  height: auto;
+}
+
 .main {
   padding: 2rem 1.5rem;
   width: 60%;
 }
 
+.main h4 {
+  color: #585858;
+}
+
 .secondary {
   width: 40%;
+}
+
+.section-title {
+  margin: 2rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 900px) {
@@ -99,6 +113,10 @@ nav div {
 
   h4 {
     font-size: 1rem;
+  }
+
+  .section-title {
+    margin: 1rem 2rem 0.5rem 2rem;
   }
 }
 
@@ -212,7 +230,6 @@ nav div {
 }
 
 #headlines .main h4 {
-  color: #585858;
   margin: 1.5rem 3rem 2rem 0;
 }
 
@@ -233,11 +250,6 @@ nav div {
 .headline h4 {
   margin: 1rem 0;
   color: #585858;
-}
-
-.headline .image-content {
-  width: 35%;
-  height: auto;
 }
 
 .headline .text-content {
@@ -331,11 +343,6 @@ nav div {
   color: #b99e13;
 }
 
-.section-title {
-  margin: 2rem;
-  text-align: center;
-}
-
 #courses {
   width: 100%;
   background-color: #b4b4b4;
@@ -367,10 +374,6 @@ nav div {
      flex-direction: column;
    }
 
-   .section-title {
-     margin: 1rem 2rem 0.5rem 2rem;
-   }
-
    #courses {
      padding: 1rem;
    }
@@ -393,28 +396,21 @@ nav div {
   color: #585858;
 }
 
-.exhibit .image-content {
-  width: 35%;
-  height: auto;
-}
-
 .exhibit .text-content {
   width: 65%;
   padding: 1.5rem;
 }
 
+#exhibits .main {
+  padding-top: 0;
+}
+
 #exhibits .main h4 {
   margin-top: 0.5rem;
-  color: #585858;
 }
 
 #exhibits .main .text-content {
   margin-top: 1.5rem;
-}
-
-  /* Exhibits Secondary */
-#exhibits .secondary{
-  padding-top: 2rem;
 }
 
 @media only screen and (max-width: 630px) {
