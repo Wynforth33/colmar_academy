@@ -9,9 +9,9 @@ equivalents in the wireframe.*/
   Color # 1 - Black: #000
   Color # 2 - Lighter Black: #3e3939
   Color # 3 - Darker Gray: #585858
-  Color # 4 - Lighter Gray: #b4b4b4
-  Color # 6 - White: #fff
-  Color # 4 - Darker Gold: #b99e13
+  Color # 4 - Lighter Gray: #d7d7d7
+  Color # 5 - White: #fff
+  Color # 6 - Darker Gold: #b99e13
 */
 
 /* Universal */
@@ -127,7 +127,7 @@ nav div {
 }
 
 .logo strong {
-  color: #b4b4b4;
+  color: #eaeaea;
   font-weight: bold;
 }
 
@@ -324,7 +324,7 @@ nav div {
 }
 
 .course .text-content h4 {
-  color: #959595;
+  color: #eaeaea;
 }
 
 .course .text-content h4.designation {
