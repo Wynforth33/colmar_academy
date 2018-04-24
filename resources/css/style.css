@@ -67,6 +67,12 @@ footer {
   justify-content: space-between;
 }
 
+/* header span,
+footer span,
+a {
+  color: #b99e13;
+} */
+
 
 /* Header */
 .logo {
